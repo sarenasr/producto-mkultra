@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/producto-mkultra/static/css/main.a6c6f000.css",
+    "main.js": "/producto-mkultra/static/js/main.817e7abc.js",
+    "index.html": "/producto-mkultra/index.html",
+    "main.a6c6f000.css.map": "/producto-mkultra/static/css/main.a6c6f000.css.map",
+    "main.817e7abc.js.map": "/producto-mkultra/static/js/main.817e7abc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6c6f000.css",
+    "static/js/main.817e7abc.js"
+  ]
+}
