@@ -1,3 +1,136 @@
+# Node / React / build
+node_modules/
+/.pnp
+/.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Production build
+/build
+/dist
+/out
+
+# Local env files
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Metro cache (react-native)
+.expo
+.expo-shared
+
+# Misc caches
+.cache/
+.parcel-cache/
+.next/
+.turbo/
+.vite/
+.vitepress/dist
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+/.stryker-tmp
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+/logs
+npm-debug.log*
+yarn-debug.log*
+
+# Testing
+/coverage
+/.nyc_output
+/coverage-report
+
+# Build system artifacts
+/*.tsbuildinfo
+/.history
+
+# Lockfiles typically should stay in repo (package-lock.json/yarn.lock)
+# but some workflows prefer ignoring them; keep them if you rely on reproducible builds
+# package-lock.json
+# yarn.lock
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+
+# IDE specific
+*.sublime-workspace
+*.sublime-project
+
+# Python
+venv/
+.envrc
+
+# MacOS Finder
+.AppleDouble
+.LSOverride
+
+# OneDrive and sync helpers (ignore OS sync metadata that often generates noise)
+~$*
+~.*
+# user-specific desktop.ini already covered but keep pattern for temp files
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Ignore build artifacts from deployment folders
+/gh-pages
+
+# Ignore local npm global installs
+.npm
+
+# Ignore Yarn v2 offline cache
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Keep node modules linked via workspace in monorepos
+.pnpm-store/
+
+# Firebase
+.firebase/
+
+# Windows / PowerShell / Batch script files (exclude if many auto-generated)
+*.ps1
+*.psm1
+*.psd1
+*.ps1xml
+*.pssc
+*.cmd
+*.bat
+*.psm1
+
+# Shell scripts (optional)
+*.sh
+
+# End of file
+
 # This .gitignore is appropriate for repositories deployed to GitHub Pages and using
 # a Gemfile as specified at https://github.com/github/pages-gem#conventional
 

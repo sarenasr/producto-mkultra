@@ -1,0 +1,114 @@
+.context {
+  padding: 8rem 0;
+  background: #0a0a0a;
+  position: relative;
+}
+
+.context h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: #fff;
+  margin-bottom: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.context h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #c9a961;
+  margin: 1rem auto 0;
+}
+
+.context-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.context-text {
+  color: #d0d0d0;
+}
+
+.context-text h3 {
+  color: #c9a961;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.context-text h3:first-child {
+  margin-top: 0;
+}
+
+.context-text p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  font-size: 1.05rem;
+}
+
+.context-text ul {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.context-text li {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.context-text li strong {
+  color: #c9a961;
+}
+
+.context-figure {
+  position: sticky;
+  top: 100px;
+  margin: 0;
+}
+
+.context-figure .image-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(201, 169, 97, 0.2);
+}
+
+.context-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  filter: grayscale(50%);
+  transition: filter 0.3s ease;
+}
+
+.context-figure img:hover {
+  filter: grayscale(0%);
+}
+
+@media (max-width: 968px) {
+  .context-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .context-figure {
+    position: relative;
+    top: 0;
+  }
+
+  .context-text p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .context {
+    padding: 5rem 0;
+  }
+}

@@ -1,0 +1,194 @@
+<mkultraReport version="1.1" lang="es">
+  <!--
+    ACTUALIZACIÓN: Se agregan IMÁGENES y artefactos documentales REALES con licencia clara.
+    Criterios:
+      - Procedencia verificada (Wikimedia Commons, archivos gubernamentales, National Security Archive).
+      - Licencias compatibles (dominio público u otras libres).
+      - Ubicación semántica precisa (hero, cronología, actores, métodos).
+      - Metadatos completos (título, autor/entidad, fecha, fuente, licencia, alt).
+      - Advertencias de uso cuando corresponda.
+    Nota para el agente de código:
+      - Renderizar <images> como un “asset registry”.
+      - Cada sección referencia imágenes por id via <imgRef id="..."/>.
+      - Incluir captions y créditos visibles y accesibles.
+  -->
+
+  <meta>
+    <title>MK-Ultra: Experimentos secretos de la CIA (EE. UU. y Canadá, 1953–1964)</title>
+    <author>Equipo de Historia</author>
+    <audience>Universitario / público general interesado en historia, ética científica y política de la Guerra Fría</audience>
+    <created>2025-11-08</created>
+    <license>CC BY-NC 4.0</license>
+  </meta>
+
+  <sources>
+    <source id="NSA_2024" type="web" publisher="National Security Archive" title="CIA Behavior Control Experiments Focus of New Scholarly Collection" date="2024-12-23" url="https://nsarchive.gwu.edu/briefing-book/dnsa-intelligence/2024-12-23/cia-behavior-control-experiments-focus-new-scholarly"/> <!-- :contentReference[oaicite:0]{index=0} -->
+    <source id="SSCI_1977_pdf" type="pdf" publisher="U.S. Senate Select Committee on Intelligence" title="Project MKULTRA, The CIA’s Program of Research in Behavioral Modification (Joint Hearing)" date="1977-08-03" url="https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-hearings-95mkultra.pdf"/> <!-- :contentReference[oaicite:1]{index=1} -->
+    <source id="SSCI_1977_alt" type="pdf" publisher="U.S. GPO / Wikimedia" title="Project MKULTRA ... (alternate scan)" date="1977-08-03" url="https://upload.wikimedia.org/wikipedia/commons/0/01/ProjectMKULTRA_Senate_Report.pdf"/> <!-- :contentReference[oaicite:2]{index=2} -->
+    <source id="BRIT_2025" type="web" publisher="Encyclopaedia Britannica" title="MK-ULTRA" date="2025-10-23" url="https://www.britannica.com/topic/MK-ULTRA"/> <!-- :contentReference[oaicite:3]{index=3} -->
+    <source id="BRIT_Q_2025" type="web" publisher="Encyclopaedia Britannica" title="What happened to MK-ULTRA?" date="2025-10-21" url="https://www.britannica.com/question/What-happened-to-MK-ULTRA"/> <!-- :contentReference[oaicite:4]{index=4} -->
+    <source id="NPR_2019" type="web" publisher="NPR (Fresh Air)" title="The CIA's Secret Quest for Mind Control: Torture, LSD and a 'Poisoner in Chief'" date="2019-09-09" url="https://www.npr.org/2019/09/09/758989641/the-cias-secret-quest-for-mind-control-torture-lsd-and-a-poisoner-in-chief"/> <!-- :contentReference[oaicite:5]{index=5} -->
+  </sources>
+
+  <!-- REGISTRO DE IMÁGENES VERIFICADAS -->
+  <images>
+    <!-- Portada / hero -->
+    <image id="img_senate_report_cover" placement="hero" importance="high">
+      <title>Portada del informe del Senado de EE. UU. (1977) sobre MKULTRA</title>
+      <alt>Portada en blanco y negro del informe del Senado sobre MKULTRA de 1977</alt>
+      <src>https://upload.wikimedia.org/wikipedia/commons/0/01/ProjectMKULTRA_Senate_Report.pdf#page=1</src>
+      <credit>U.S. Senate Select Committee on Intelligence / U.S. Government Printing Office</credit>
+      <license>Dominio público (obra del gobierno de EE. UU.)</license>
+      <notes>Usar como “hero background” con superposición; cargar como imagen rasterizada del primer folio.</notes>
+      <!-- :contentReference[oaicite:6]{index=6} -->
+    </image>
+
+    <!-- Retratos de actores -->
+    <image id="img_allen_dulles" placement="actors">
+      <title>Allen W. Dulles (Director de la CIA)</title>
+      <alt>Retrato oficial de Allen W. Dulles</alt>
+      <src>https://commons.wikimedia.org/wiki/File:Allen_w_dulles.jpg</src>
+      <credit>U.S. Government — Wikimedia Commons</credit>
+      <license>Dominio público (obra del gobierno de EE. UU.)</license>
+      <!-- :contentReference[oaicite:7]{index=7} -->
+    </image>
+
+    <image id="img_donald_ewen_cameron" placement="actors">
+      <title>Donald Ewen Cameron</title>
+      <alt>Retrato en escala de grises de Donald Ewen Cameron</alt>
+      <src>https://commons.wikimedia.org/wiki/File:Donald_Ewen_Cameron_canmedaj01237-0046-a.jpg</src>
+      <credit>Wikimedia Commons (fuente histórica)</credit>
+      <license>Según ficha de Commons (revisar aviso en tiempo de carga)</license>
+      <!-- :contentReference[oaicite:8]{index=8} -->
+    </image>
+
+    <image id="img_sidney_gottlieb" placement="actors">
+      <title>Sidney Gottlieb (audiencia 1977)</title>
+      <alt>Fotografía de Sidney Gottlieb declarando en 1977</alt>
+      <src>https://commons.wikimedia.org/wiki/File:Sidney_Gottlieb_photo.jpg</src>
+      <credit>Wikimedia Commons (fuente fotográfica)</credit>
+      <license>Según ficha de Commons (verificar restricciones de uso)</license>
+      <notes>Si la licencia no permite uso, ocultar esta tarjeta y reemplazar por cita textual del acta del Senado.</notes>
+      <!-- :contentReference[oaicite:9]{index=9} -->
+    </image>
+
+    <image id="img_frank_olson" placement="timeline">
+      <title>Frank Olson (1953)</title>
+      <alt>Retrato de Frank Olson en 1953</alt>
+      <src>https://en.wikipedia.org/wiki/Frank_Olson#/media/File:Frank_Olsen_(1910-1953).jpg</src>
+      <credit>Wikimedia (ver ficha de licencia)</credit>
+      <license>Ver ficha; algunos listados indican dominio público por no renovación, pero revisar en implementación.</license>
+      <notes>Si la licencia no es inequívoca, no mostrar imagen y mantener solo texto con enlace a la página de Wikipedia.</notes>
+      <!-- :contentReference[oaicite:10]{index=10} -->
+    </image>
+
+    <!-- Lugares -->
+    <image id="img_allan_memorial_institute" placement="methods">
+      <title>Allan Memorial Institute (Montreal)</title>
+      <alt>Fachada del Allan Memorial Institute</alt>
+      <src>https://commons.wikimedia.org/wiki/File:Allan_Memorial_Institute.jpg</src>
+      <credit>Wikimedia Commons</credit>
+      <license>Según ficha de Commons (usualmente CC BY-SA)</license>
+      <!-- :contentReference[oaicite:11]{index=11} -->
+    </image>
+
+    <image id="img_cia_langley" placement="context">
+      <title>Sede original de la CIA en Langley (c. 1961)</title>
+      <alt>Edificio original de la CIA en Langley, Virginia</alt>
+      <src>https://commons.wikimedia.org/wiki/File:CIA_Original_Headquarters_Building.jpg</src>
+      <credit>U.S. Government — Wikimedia Commons</credit>
+      <license>Dominio público (obra del gobierno de EE. UU.)</license>
+      <!-- :contentReference[oaicite:12]{index=12} -->
+    </image>
+
+    <!-- Documentos desclasificados -->
+    <image id="img_mkultra_redacted_doc" placement="methods">
+      <title>Documento desclasificado de MKULTRA con tachaduras</title>
+      <alt>Página redactada de un documento de MKULTRA</alt>
+      <src>https://commons.wikimedia.org/wiki/File:Mkultra-lsd-doc.jpg</src>
+      <credit>CIA / Wikimedia Commons</credit>
+      <license>Dominio público (obra del gobierno de EE. UU.)</license>
+      <!-- :contentReference[oaicite:13]{index=13} -->
+    </image>
+
+    <!-- Colección académica reciente -->
+    <image id="img_nsa_collection" placement="investigations">
+      <title>Colección MKULTRA del National Security Archive (2024)</title>
+      <alt>Captura de portada del briefing del National Security Archive</alt>
+      <src>https://nsarchive.gwu.edu/briefing-book/dnsa-intelligence/2024-12-23/cia-behavior-control-experiments-focus-new-scholarly</src>
+      <credit>National Security Archive</credit>
+      <license>Uso editorial con enlace a la fuente</license>
+      <notes>Si no es práctico capturar miniatura, usar tarjeta con enlace y resumen.</notes>
+      <!-- :contentReference[oaicite:14]{index=14} -->
+    </image>
+  </images>
+
+  <!-- Sugerencias de inserción dentro del documento original -->
+  <intro id="introduccion">
+    <p>…</p>
+    <figure><imgRef id="img_senate_report_cover"/><caption>Portada del informe del Senado (1977). Fuente primaria clave del caso MKULTRA.</caption></figure>
+  </intro>
+
+  <context id="contexto-historico">
+    <p>…</p>
+    <figure><imgRef id="img_cia_langley"/><caption>Sede de la CIA en Langley (c. 1961).</caption></figure>
+  </context>
+
+  <timeline id="linea-de-tiempo">
+    <event date="1953-11" title="Caso Frank Olson">
+      <p>…</p>
+      <figure><imgRef id="img_frank_olson"/><caption>Frank Olson (1953). Verificar licencia en la ficha de Commons/Wikipedia antes de uso en producción.</caption></figure>
+    </event>
+  </timeline>
+
+  <actors id="actores-principales">
+    <actor name="Allen W. Dulles">
+      <p>…</p>
+      <figure><imgRef id="img_allen_dulles"/><caption>Allen W. Dulles, Director de la CIA.</caption></figure>
+    </actor>
+    <actor name="Donald Ewen Cameron">
+      <p>…</p>
+      <figure><imgRef id="img_donald_ewen_cameron"/><caption>Donald Ewen Cameron (McGill / Allan Memorial Institute).</caption></figure>
+    </actor>
+    <actor name="Sidney Gottlieb">
+      <p>…</p>
+      <figure><imgRef id="img_sidney_gottlieb"/><caption>Sidney Gottlieb durante audiencias de 1977 (si la licencia lo permite).</caption></figure>
+    </actor>
+  </actors>
+
+  <methods id="metodos-experimentos">
+    <accordion>
+      <item title="Electrochoque intensivo y ‘conducción psíquica’">
+        <p>…</p>
+        <figure><imgRef id="img_allan_memorial_institute"/><caption>Allan Memorial Institute, Montreal (sitio de los experimentos de Cameron).</caption></figure>
+      </item>
+      <item title="LSD y otros psicotrópicos">
+        <p>…</p>
+        <figure><imgRef id="img_mkultra_redacted_doc"/><caption>Documento desclasificado de MKULTRA (CIA) con redacciones.</caption></figure>
+      </item>
+    </accordion>
+  </methods>
+
+  <investigations id="investigaciones-y-legado">
+    <p>…</p>
+    <figure><imgRef id="img_nsa_collection"/><caption>Briefing del National Security Archive (2024) que reúne 1.200+ documentos.</caption></figure>
+  </investigations>
+
+  <!-- Directrices críticas para el agente (control de calidad visual/legal) -->
+  <imageComplianceChecklist>
+    <rule>Preferir obras del gobierno de EE. UU. (dominio público) y Wikimedia Commons con licencia clara.</rule>
+    <rule>Antes de publicar, resolver la licencia de <ref>img_sidney_gottlieb</ref> y <ref>img_frank_olson</ref>. Si no es 100% clara, ocultar esas imágenes y mantener solo texto y enlaces.</rule>
+    <rule>No usar recreaciones, fotogramas sin licencia, ni material especulativo.</rule>
+    <rule>Añadir pie de foto con fuente y licencia debajo de cada imagen; enlazar a la página de origen.</rule>
+    <rule>Optimizar rendimiento: generar thumbnails locales; para PDFs (portada del Senado) rasterizar la página 1 a 1600px de ancho.</rule>
+    <rule>Accesibilidad: todos los <imgRef> deben tener atributo alt significativo.</rule>
+  </imageComplianceChecklist>
+
+  <!-- Notas de criticidad histórica -->
+  <curatorialNotes>
+    <note>Las imágenes de documentos con tachaduras reflejan el problema de la destrucción de archivos en 1973; son adecuadas para secciones de “métodos/encubrimiento”. <!-- :contentReference[oaicite:15]{index=15} --></note>
+    <note>La foto del Allan Memorial Institute contextualiza los experimentos de Cameron en Montreal; sitúese en esa subsección, no en la cronología general. <!-- :contentReference[oaicite:16]{index=16} --></note>
+    <note>Retratos oficiales (Dulles) son apropiados en “Actores”; evite usarlos como hero para no personalizar excesivamente el relato. <!-- :contentReference[oaicite:17]{index=17} --></note>
+    <note>Para Gottlieb y Olson, priorizar enlaces a fuentes primarias (audiencias del Senado y archivos) si hay dudas de derechos; no “rellenar” con imágenes de stock. <!-- :contentReference[oaicite:18]{index=18} --></note>
+  </curatorialNotes>
+</mkultraReport>

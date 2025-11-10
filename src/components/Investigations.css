@@ -1,0 +1,290 @@
+.investigations {
+  padding: 8rem 0;
+  background: #0a0a0a;
+  position: relative;
+}
+
+.investigations h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.investigations h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #c9a961;
+  margin: 1rem auto 0;
+}
+
+.section-intro {
+  text-align: center;
+  color: #b0b0b0;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.investigations-timeline {
+  max-width: 900px;
+  margin: 0 auto 6rem;
+}
+
+.investigation-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(201, 169, 97, 0.15);
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  transition: all 0.3s ease;
+}
+
+.investigation-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(201, 169, 97, 0.3);
+  transform: translateX(10px);
+}
+
+.investigation-icon {
+  font-size: 3rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(201, 169, 97, 0.1);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.investigation-year {
+  display: inline-block;
+  background: #c9a961;
+  color: #0a0a0a;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.investigation-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.investigation-description {
+  color: #d0d0d0;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.investigation-quote {
+  background: rgba(201, 169, 97, 0.05);
+  border-left: 4px solid #c9a961;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #b0b0b0;
+  border-radius: 4px;
+}
+
+.investigation-findings h4 {
+  color: #c9a961;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.investigation-findings ul {
+  list-style: none;
+  padding: 0;
+}
+
+.investigation-findings li {
+  color: #d0d0d0;
+  padding: 0.6rem 0;
+  padding-left: 2rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.investigation-findings li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #c9a961;
+  font-weight: bold;
+}
+
+.legacy-section {
+  margin-top: 6rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(201, 169, 97, 0.2);
+}
+
+.legacy-section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.legacy-intro {
+  text-align: center;
+  color: #b0b0b0;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.legacy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.legacy-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(201, 169, 97, 0.15);
+  border-radius: 8px;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.legacy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.legacy-card h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.legacy-card p {
+  color: #d0d0d0;
+  line-height: 1.7;
+}
+
+.impact-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.legacy-positive {
+  border-left: 3px solid #4caf50;
+}
+
+.legacy-positive .impact-badge {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+}
+
+.legacy-negative {
+  border-left: 3px solid #f44336;
+}
+
+.legacy-negative .impact-badge {
+  background: rgba(244, 67, 54, 0.2);
+  color: #f44336;
+}
+
+.legacy-mixed {
+  border-left: 3px solid #ff9800;
+}
+
+.legacy-mixed .impact-badge {
+  background: rgba(255, 152, 0, 0.2);
+  color: #ff9800;
+}
+
+.reflection-box {
+  background: linear-gradient(135deg, rgba(201, 169, 97, 0.1) 0%, rgba(201, 169, 97, 0.05) 100%);
+  border: 1px solid rgba(201, 169, 97, 0.3);
+  border-radius: 12px;
+  padding: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.reflection-box h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #c9a961;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.reflection-box p {
+  color: #d0d0d0;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.reflection-box p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .investigations {
+    padding: 5rem 0;
+  }
+
+  .investigation-card {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .investigation-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .investigation-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  .investigation-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .legacy-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .reflection-box {
+    padding: 2rem 1.5rem;
+  }
+}
