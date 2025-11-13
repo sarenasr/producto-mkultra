@@ -38,7 +38,7 @@ const Hero = () => {
 
       <div className="hero-document-bg">
         <img 
-          src="/images/Mkultra-lsd-doc.jpg" 
+          src={`${process.env.PUBLIC_URL}/images/Mkultra-lsd-doc.jpg`}
           alt="Documento desclasificado de MK-ULTRA"
           loading="eager"
         />
