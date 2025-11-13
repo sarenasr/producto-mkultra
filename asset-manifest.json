@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/producto-mkultra/static/css/main.c2c7665d.css",
-    "main.js": "/producto-mkultra/static/js/main.11742191.js",
+    "main.js": "/producto-mkultra/static/js/main.e920467e.js",
     "index.html": "/producto-mkultra/index.html",
     "main.c2c7665d.css.map": "/producto-mkultra/static/css/main.c2c7665d.css.map",
-    "main.11742191.js.map": "/producto-mkultra/static/js/main.11742191.js.map"
+    "main.e920467e.js.map": "/producto-mkultra/static/js/main.e920467e.js.map"
   },
   "entrypoints": [
     "static/css/main.c2c7665d.css",
-    "static/js/main.11742191.js"
+    "static/js/main.e920467e.js"
   ]
 }
