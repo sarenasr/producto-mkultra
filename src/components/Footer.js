@@ -99,6 +99,12 @@ const Footer = () => {
         <div className="footer-divider"></div>
 
         <div className="footer-bottom">
+          <div className="footer-creators">
+            <h4>Creadores del Proyecto</h4>
+            <p><strong>Samuel Amaya y Santiago Arenas</strong></p>
+            <p>Universidad de los Andes, Bogotá, Colombia</p>
+          </div>
+
           <div className="footer-copyright">
             <p>&copy; {currentYear} Proyecto MK-ULTRA - Universidad de los Andes. Todos los derechos reservados.</p>
             <p className="footer-disclaimer">

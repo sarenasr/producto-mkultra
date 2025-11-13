@@ -54,14 +54,14 @@ const Introduction = () => {
           >
             <div className="image-container">
               <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/0/01/ProjectMKULTRA_Senate_Report.pdf#page=1" 
-                alt="Portada del informe del Senado de 1977 sobre MKULTRA"
+                src="/images/Mkultra-lsd-doc.jpg" 
+                alt="Documento desclasificado de MK-ULTRA sobre experimentos con LSD"
                 loading="lazy"
               />
             </div>
             <figcaption>
-              Portada del informe del Senado (1977). Fuente primaria clave del caso MKULTRA.
-              <span className="credit">Fuente: U.S. Senate Select Committee on Intelligence / Dominio público</span>
+              Documento desclasificado de MK-ULTRA sobre experimentos con LSD.
+              <span className="credit">Fuente: CIA / National Archives / Dominio público</span>
             </figcaption>
           </motion.figure>
         </motion.div>

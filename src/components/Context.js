@@ -63,7 +63,7 @@ const Context = () => {
             >
               <div className="image-container">
                 <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/CIA_Original_Headquarters_Building.jpg/800px-CIA_Original_Headquarters_Building.jpg" 
+                  src="/images/CIA_Original_Headquarters_Building.jpg" 
                   alt="Sede original de la CIA en Langley, Virginia"
                   loading="lazy"
                 />

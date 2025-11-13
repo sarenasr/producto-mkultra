@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Imágenes MK-ULTRA</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 30px 0;
+            border: 1px solid #c9a961;
+            padding: 20px;
+        }
+        img {
+            max-width: 300px;
+            display: block;
+            margin: 10px 0;
+            border: 2px solid #c9a961;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .loaded { background: #2a4; }
+        .error { background: #a24; }
+    </style>
+</head>
+<body>
+    <h1>Test de Carga de Imágenes Wikimedia</h1>
+    
+    <div class="test-section">
+        <h2>1. Allen Dulles</h2>
+        <p>URL Original:</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Allen_w_dulles.jpg" 
+             alt="Allen Dulles - Original"
+             onload="this.nextElementSibling.className='status loaded'; this.nextElementSibling.textContent='✓ Cargada correctamente';"
+             onerror="this.nextElementSibling.className='status error'; this.nextElementSibling.textContent='✗ Error al cargar';">
+        <div class="status">Cargando...</div>
+        
+        <p>URL con Thumbnail:</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Allen_w_dulles.jpg/330px-Allen_w_dulles.jpg" 
+             alt="Allen Dulles - Thumb"
+             onload="this.nextElementSibling.className='status loaded'; this.nextElementSibling.textContent='✓ Cargada correctamente';"
+             onerror="this.nextElementSibling.className='status error'; this.nextElementSibling.textContent='✗ Error al cargar';">
+        <div class="status">Cargando...</div>
+    </div>
+
+    <div class="test-section">
+        <h2>2. Sidney Gottlieb</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Sidney_Gottlieb_photo.jpg" 
+             alt="Sidney Gottlieb"
+             onload="this.nextElementSibling.className='status loaded'; this.nextElementSibling.textContent='✓ Cargada correctamente';"
+             onerror="this.nextElementSibling.className='status error'; this.nextElementSibling.textContent='✗ Error al cargar';">
+        <div class="status">Cargando...</div>
+    </div>
+
+    <div class="test-section">
+        <h2>3. Donald Cameron</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Donald_Ewen_Cameron_canmedaj01237-0046-a.jpg" 
+             alt="Donald Cameron"
+             onload="this.nextElementSibling.className='status loaded'; this.nextElementSibling.textContent='✓ Cargada correctamente';"
+             onerror="this.nextElementSibling.className='status error'; this.nextElementSibling.textContent='✗ Error al cargar';">
+        <div class="status">Cargando...</div>
+    </div>
+
+    <div class="test-section">
+        <h2>4. Richard Helms</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Richard_M_Helms-Official-Portrait.jpg" 
+             alt="Richard Helms"
+             onload="this.nextElementSibling.className='status loaded'; this.nextElementSibling.textContent='✓ Cargada correctamente';"
+             onerror="this.nextElementSibling.className='status error'; this.nextElementSibling.textContent='✗ Error al cargar';">
+        <div class="status">Cargando...</div>
+    </div>
+
+    <div class="test-section">
+        <h2>5. MK-ULTRA Document (LSD)</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Mkultra-lsd-doc.jpg" 
+             alt="MK-ULTRA Document"
+             onload="this.nextElementSibling.className='status loaded'; this.nextElementSibling.textContent='✓ Cargada correctamente';"
+             onerror="this.nextElementSibling.className='status error'; this.nextElementSibling.textContent='✗ Error al cargar';">
+        <div class="status">Cargando...</div>
+    </div>
+
+    <div class="test-section">
+        <h2>6. CIA Headquarters</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/CIA_Original_Headquarters_Building.jpg" 
+             alt="CIA HQ"
+             onload="this.nextElementSibling.className='status loaded'; this.nextElementSibling.textContent='✓ Cargada correctamente';"
+             onerror="this.nextElementSibling.className='status error'; this.nextElementSibling.textContent='✗ Error al cargar';">
+        <div class="status">Cargando...</div>
+    </div>
+
+    <div class="test-section">
+        <h2>7. Allan Memorial Institute</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Allan_Memorial_Institute.jpg" 
+             alt="Allan Memorial"
+             onload="this.nextElementSibling.className='status loaded'; this.nextElementSibling.textContent='✓ Cargada correctamente';"
+             onerror="this.nextElementSibling.className='status error'; this.nextElementSibling.textContent='✗ Error al cargar';">
+        <div class="status">Cargando...</div>
+    </div>
+
+    <script>
+        console.log('Test de imágenes iniciado');
+        console.log('Abre la consola del navegador (F12) para ver más detalles');
+        
+        // Log de todas las imágenes después de 5 segundos
+        setTimeout(() => {
+            const images = document.querySelectorAll('img');
+            images.forEach((img, index) => {
+                console.log(`Imagen ${index + 1}:`, {
+                    src: img.src,
+                    complete: img.complete,
+                    naturalWidth: img.naturalWidth,
+                    status: img.complete && img.naturalWidth > 0 ? 'OK' : 'ERROR'
+                });
+            });
+        }, 5000);
+    </script>
+</body>
+</html>

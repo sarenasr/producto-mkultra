@@ -38,8 +38,8 @@ const Hero = () => {
 
       <div className="hero-document-bg">
         <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/0/01/ProjectMKULTRA_Senate_Report.pdf#page=1" 
-          alt="Portada del informe del Senado sobre MK-ULTRA"
+          src="/images/Mkultra-lsd-doc.jpg" 
+          alt="Documento desclasificado de MK-ULTRA"
           loading="eager"
         />
       </div>

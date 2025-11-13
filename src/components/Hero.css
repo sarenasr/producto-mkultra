@@ -24,8 +24,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.15;
-  filter: grayscale(100%) contrast(1.2);
+  opacity: 0.3;
+  filter: grayscale(80%) contrast(1.1);
 }
 
 .hero-document-bg img {
@@ -67,13 +67,15 @@
   color: #a0a0a0;
   font-weight: 300;
   letter-spacing: 0.1rem;
+  margin-bottom: 10rem;
 }
 
 .hero-scroll {
   position: absolute;
-  bottom: 3rem;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 3;
 }
 
 .scroll-indicator {
@@ -82,14 +84,15 @@
   align-items: center;
   text-decoration: none;
   cursor: pointer;
+  padding: 1rem;
 }
 
 .scroll-indicator span {
   display: block;
   width: 2px;
-  height: 15px;
+  height: 20px;
   background: #c9a961;
-  margin: 3px 0;
+  margin: 4px 0;
   animation: scrollAnimation 2s infinite;
 }
 
@@ -104,11 +107,11 @@
 @keyframes scrollAnimation {
   0%, 100% {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
   50% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(5px);
   }
 }
 

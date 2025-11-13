@@ -11,7 +11,8 @@ const Sources = () => {
       year: '1977',
       description: 'Audiencias del Senado sobre el Proyecto MK-ULTRA presididas por el Senador Ted Kennedy. Incluye el testimonio del Director de la CIA, Almirante Stansfield Turner.',
       url: 'https://www.intelligence.senate.gov/sites/default/files/hearings/95mkultra.pdf',
-      icon: '📄'
+      icon: '📄',
+      apa: 'U.S. Senate Select Committee on Intelligence. (1977). Project MK-ULTRA, the CIA\'s program of research in behavioral modification: Joint hearing before the Select Committee on Intelligence and the Subcommittee on Health and Scientific Research of the Committee on Human Resources, United States Senate, Ninety-fifth Congress, first session, August 3, 1977. U.S. Government Printing Office. https://www.intelligence.senate.gov/sites/default/files/hearings/95mkultra.pdf'
     },
     {
       type: 'Archivo Nacional de Seguridad',
@@ -20,7 +21,8 @@ const Sources = () => {
       year: '2018',
       description: 'Colección exhaustiva de documentos desclasificados sobre MK-ULTRA, incluyendo memorandos, reportes de experimentos y correspondencia interna de la CIA.',
       url: 'https://nsarchive.gwu.edu/briefing-book/intelligence/2018-08-13/cias-family-jewels',
-      icon: '🗃️'
+      icon: '🗃️',
+      apa: 'National Security Archive, George Washington University. (2018, August 13). CIA\'s "Family Jewels": Remembering MK-ULTRA on its 45th anniversary. https://nsarchive.gwu.edu/briefing-book/intelligence/2018-08-13/cias-family-jewels'
     },
     {
       type: 'Investigación Histórica',
@@ -30,7 +32,8 @@ const Sources = () => {
       description: 'Investigación periodística fundamental basada en documentos obtenidos mediante la Ley de Libertad de Información (FOIA). Marks fue uno de los primeros en exponer la amplitud del programa.',
       url: null,
       citation: 'Marks, John. "The Search for the Manchurian Candidate: The CIA and Mind Control." Times Books, 1979.',
-      icon: '📚'
+      icon: '📚',
+      apa: 'Marks, J. (1979). The search for the Manchurian candidate: The CIA and mind control. Times Books.'
     },
     {
       type: 'Comisión de Investigación',
@@ -39,7 +42,8 @@ const Sources = () => {
       year: '1976',
       description: 'Reporte final de la Comisión Church que investigó operaciones ilegales de inteligencia, incluyendo experimentación humana no autorizada en programas como MK-ULTRA.',
       url: 'https://www.intelligence.senate.gov/resources/intelligence-related-commissions',
-      icon: '📋'
+      icon: '📋',
+      apa: 'U.S. Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities. (1976). Intelligence activities and the rights of Americans: Final report of the Select Committee to Study Governmental Operations with Respect to Intelligence Activities, United States Senate. U.S. Government Printing Office. https://www.intelligence.senate.gov/resources/intelligence-related-commissions'
     },
     {
       type: 'Investigación Académica',
@@ -49,7 +53,8 @@ const Sources = () => {
       description: 'Investigación detallada sobre los experimentos del Dr. Ewen Cameron en el Allan Memorial Institute de Montreal, documenta el sufrimiento de las víctimas y las conexiones con la CIA.',
       url: null,
       citation: 'Collins, Anne. "In the Sleep Room: The Story of the CIA Brainwashing Experiments in Canada." Lester & Orpen Dennys, 1988.',
-      icon: '📖'
+      icon: '📖',
+      apa: 'Collins, A. (1988). In the sleep room: The story of the CIA brainwashing experiments in Canada. Lester & Orpen Dennys.'
     }
   ];
 
@@ -106,7 +111,12 @@ const Sources = () => {
                 </div>
                 <p className="source-description">{source.description}</p>
                 
-                {source.url ? (
+                <div className="source-apa">
+                  <strong>Cita APA:</strong>
+                  <p>{source.apa}</p>
+                </div>
+                
+                {source.url && (
                   <a 
                     href={source.url} 
                     target="_blank" 
@@ -115,10 +125,6 @@ const Sources = () => {
                   >
                     Acceder al Documento →
                   </a>
-                ) : (
-                  <div className="source-citation">
-                    <strong>Cita:</strong> {source.citation}
-                  </div>
                 )}
               </motion.div>
             ))}

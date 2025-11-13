@@ -128,6 +128,32 @@
   color: #c9a961;
 }
 
+.source-apa {
+  background: rgba(201, 169, 97, 0.05);
+  padding: 1.2rem;
+  border-radius: 6px;
+  border-left: 3px solid #c9a961;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.source-apa strong {
+  color: #c9a961;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.source-apa p {
+  color: #d0d0d0;
+  line-height: 1.8;
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: 'Courier New', monospace;
+}
+
 .additional-resources {
   max-width: 900px;
   margin: 5rem auto;

@@ -18,7 +18,7 @@ const Methods = () => {
         'Uso de barbitúricos y anfetaminas para interrogatorios'
       ],
       impact: 'El Dr. Harris Isbell administró LSD a reclusos de la prisión federal de Lexington, Kentucky, durante hasta 77 días consecutivos. Muchos sujetos experimentaron episodios psicóticos, trastornos de estrés postraumático y daño psicológico permanente.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Mkultra-lsd-doc.jpg/440px-Mkultra-lsd-doc.jpg'
+      image: '/images/Mkultra-lsd-doc.jpg'
     },
     {
       title: 'Electroshock Intensivo y "Conducción Psíquica"',
@@ -33,7 +33,7 @@ const Methods = () => {
       ],
       impact: 'Los pacientes de Cameron perdieron recuerdos, habilidades básicas y su sentido de identidad. Muchos quedaron en estados similares a la infancia, incapaces de funcionar normalmente. Las víctimas y sus familias sufrieron trauma irreversible.',
       location: 'Allan Memorial Institute, Montreal, Canadá',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Allan_Memorial_Institute.jpg/440px-Allan_Memorial_Institute.jpg'
+      image: '/images/Allan_Memorial_Institute.jpg'
     },
     {
       title: 'Hipnosis y Manipulación Psicológica',
